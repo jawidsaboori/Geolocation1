@@ -11,6 +11,7 @@ environment {
     registry = '231402041009.dkr.ecr.us-east-1.amazonaws.com/jenkins-images'
     registryCredential = 'jenkins-ecr'
     dockerimage = ''
+    SONAR_TOKEN = 'cdbbf9ebf833e93c819f110c8dd3702dfbf752ac'
 }
 
     stages {
