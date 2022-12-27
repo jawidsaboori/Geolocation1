@@ -38,8 +38,7 @@ environment {
             
             steps {
                 script{
-                  def mavenPom = readMavenPom file: 'pom.xml'
-                    dockerImage = docker.build registry + ":${mavenPom.version}"
+                    dockerImage = docker.build registry + ":$BUILD_NUMBER"
                 } 
             }
         }
